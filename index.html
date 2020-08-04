@@ -21,6 +21,16 @@
     <div style="text-align: center;">
         <p></p>
         <p></p>
+        <input type="image" src="resource/esupergo/AppIcon.png" style="height:200px;width:200px;" onclick="javascript:downloadAction(0);">
+        <div style="margin: 20 auto;">
+            <li>E Super Go</li>
+            <li>build 1</li>
+        </div>
+    </div>
+    
+    <div style="text-align: center;">
+        <p></p>
+        <p></p>
         <input type="image" src="resource/supergo/AppIcon.png" style="height:200px;width:200px;" onclick="javascript:downloadAction(1);">
         <div style="margin: 20 auto;">
             <li>Super Go</li>
@@ -44,7 +54,9 @@
 	<script type="text/javascript">
 
   	function downloadAction(tag) {
-  		if (tag == 1) {
+        if (tag == 0) {
+            location.href='itms-services://?action=download-manifest&url=https://zhu0823.github.io/supergo/resource/esupergo/manifest.plist'
+        }else if (tag == 1) {
             location.href='itms-services://?action=download-manifest&url=https://zhu0823.github.io/supergo/resource/supergo/manifest.plist'
         }else if (tag == 2) {
             location.href='itms-services://?action=download-manifest&url=https://zhu0823.github.io/supergo/resource/tiktok/manifest.plist'
