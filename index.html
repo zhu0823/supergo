@@ -1,0 +1,54 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="icon" type="image/x-icon" href="icon_dstcar_40.png">
+		<meta name="apple-itunes-app" content="app-id=1177377089">
+		<!-- <link rel="icon" type="image/x-icon" href="ios-template-40.png">
+		<meta name="apple-itunes-app" content="app-id=1441617042"> -->
+    	<meta name="apple-mobile-web-app-capable" content="yes" />
+    	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  	</head>
+  	<title>Oh Yeah,Goodick!</title>
+  	<style type="text/css">
+  	ul,li {
+			list-style: none;
+			text-align: left;
+		}
+	</style>
+    
+    <div style="text-align: center;">
+        <p></p>
+        <p></p>
+        <input type="image" src="resource/supergo/AppIcon.png" style="height:200px;width:200px;" onclick="javascript:downloadAction(1);">
+        <div style="margin: 20 auto;">
+            <li>Super Go</li>
+            <li>build 2</li>
+        </div>
+    </div>
+    
+    <div style="text-align: center;">
+        <p></p>
+        <p></p>
+        <input type="image" src="resource/tiktok/AppIcon.png" style="height:200px;width:200px;" onclick="javascript:downloadAction(2);">
+        <div style="margin: 20 auto;">
+            <li>TikTok</li>
+            <li>build 1</li>
+        </div>
+   </div>
+
+    <p></p>
+
+
+	<script type="text/javascript">
+
+  	function downloadAction(tag) {
+  		if (tag == 1) {
+            location.href='itms-services://?action=download-manifest&url=https://dlipa.goodick.com/supergo/manifest.plist'
+        }else if (tag == 2) {
+            location.href='itms-services://?action=download-manifest&url=https://dlipa.goodick.com/tiktok/manifest.plist'
+        }
+  	}
+	</script>
+</html>
